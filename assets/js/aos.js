@@ -283,12 +283,12 @@
             return h.Date.now();
           };
         e.exports = o;
-      }.call(
+      }).call(
         t,
         (function () {
           return this;
         })()
-      ));
+      );
     },
     function (e, t) {
       (function (t) {
@@ -425,12 +425,12 @@
             return g.Date.now();
           };
         e.exports = n;
-      }.call(
+      }).call(
         t,
         (function () {
           return this;
         })()
-      ));
+      );
     },
     function (e, t) {
       "use strict";

@@ -1,24 +1,1453 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CF</title>
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/toastify.min.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CF</title>
-  <link rel="stylesheet" href="./assets/css/aos.css">
-  <link rel="stylesheet" href="./assets/css/base.css" />
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <link rel="stylesheet" href="./assets/css/animate.min.css">
-  <link rel="stylesheet" href="./assets/css/toastify.min.css">
-</head>
+  <header>
+    <div
+      class="header-1"
+    >
+      <div class="px-6">
+        <img
+          src="./assets/images/logo_goplay.png"
+          alt=""
+          class="aspect-square"
+        />
+      </div>
+      <div class="flex-center space-x-2">
+        <p class="header_info-title">SỐ DƯ GO: <span>10.000</span></p>
+        <a
+        href=""
+        class="header-1_button"
+      >
+        <p>NẠP GO</p>
+      </a>
+      </div>
+      <a
+        href=""
+        class="header-1_button"
+      >
+        <p>ĐĂNG NHẬP</p>
+      </a>
 
-<body>
-  <section></section>
-  <script src="./assets/js/aos.js"></script>
-  <script src="./assets/js/toastify-js.js"></script>
-  <script src="./assets/js/jquery-3.6.3.min.js"></script>
-  <script src="./assets/js/main.js"></script>
-</body>
+      <a
+        href=""
+        class="header-1_button"
+      >
+        <p>ĐĂNG KÝ</p>
+      </a>
+      <div class="flex-center space-x-2">
+        <p class="header_info-title">TÀI KHOẢN: <span> VTCONLINE</span> - ID: <span>1234566</span></p>
+        <a
+        href=""
+        class="header-1_button"
+      >
+        <p>ĐĂNG XUẤT</p>
+      </a>
+      </div>
+    </div>
 
+    <div class="flex items-stretch justify-stretch">
+      <div
+        class="header-2_logo"
+      >
+        <a
+          href=""
+        >
+          <img src="./assets/images/logo_cf.png" alt="" class="header-2_logo-image"/>
+        </a>
+      </div>
+      <div class="flex items-stretch justify-between w-full">
+        <div class="flex justify-stretch items-stretch">
+          <div class="btn-header_backgound">
+            <a href="" class="btn-header btn-header_title btn-header_active">
+              TRANG CHỦ
+            </a>
+          </div>
+          <div class="btn-header_backgound">
+            <a
+              href=""
+              class="btn-header btn-header_title btn-header_unactive"
+            >
+              TIN TỨC
+            </a>
+          </div>
+          <div class="btn-header_backgound">
+            <a
+              href=""
+              class="btn-header btn-header_title btn-header_unactive"
+            >
+              SỰ KIỆN/UPDATE
+            </a>
+          </div>
+          <div class="btn-header_backgound">
+            <a
+              href=""
+              class="btn-header btn-header_title btn-header_unactive"
+            >
+              ESPORTS
+            </a>
+          </div>
+          <div class="btn-header_backgound">
+            <a
+              href=""
+              class="btn-header btn-header_title btn-header_unactive"
+            >
+              CẨM NANG
+            </a>
+          </div>
+          <div class="btn-header_backgound">
+            <a
+              href=""
+              class="btn-header btn-header_title btn-header_unactive flex-center space-x-2"
+            >
+              <p>WEB-EVENTS</p>
+              <img src="./assets/images/ic_web_events.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div
+          class="header-2_download"
+        >
+          <a href="">
+            <img
+              src="./assets/images/btn_download.png"
+              alt=""
+              class="w-[200px] xl:w-[280px] h-full"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <section>
+      <div class="main-slick relative mb-8">
+        <div class="w-full">
+          <img src="./assets/images/banner_events.png" alt="" class="w-full" />
+        </div>
+        <div class="w-full">
+          <img src="./assets/images/banner_events.png" alt="" class="w-full" />
+        </div>
+        <div class="w-full">
+          <img src="./assets/images/banner_events.png" alt="" class="w-full" />
+        </div>
+        <div class="w-full">
+          <img src="./assets/images/banner_events.png" alt="" class="w-full" />
+        </div>
+      </div>
+
+      <div class="container-contents">
+        <div data-aos="fade-right" class="mb-[4%]">
+          <div class="hidden lg:block">
+            <div class="flex justify-between items-center mb-[2%]">
+              <ul
+                class="tabs-nav-news flex-center space-x-[1px]"
+              >
+                <li class="tab-news tab-news-seclected">
+                  <a href="#tab-news-1">Tin tức nổi bật</a>
+                </li>
+                <li class="tab-news">
+                  <a href="#tab-news-2">SỰ KIỆN/Update</a>
+                </li>
+                <li class="tab-news"><a href="#tab-news-3">Giải đấu</a></li>
+              </ul>
+              <div class="border-b border-b-[#4a4a4a] w-full text-end">
+                <a href="" class="more-btn">Xem thêm +</a>
+              </div>
+            </div>
+          </div>
+          <div class="block lg:hidden w-full mb-4">
+            <select name="news" id="news" class="select-box-tab">
+              <option value="">
+                <a href="#tab-news-1">Tin tức nổi bật</a>
+              </option>
+              <option value=""><a href="#tab-news-2">SỰ KIỆN/Update</a></option>
+              <option value=""><a href="#tab-news-3">Giải đấu</a></option>
+            </select>
+          </div>
+
+          <div>
+            <div id="tab-news-1" class="tabs-content-news">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_update.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="events-card-title">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#ea2336] card-over"
+                  >
+                    UPDATE
+                  </div>
+                </a>
+
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_tournament.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#235bea] card-over"
+                  >
+                    GIẢI ĐẤU
+                  </div>
+                </a>
+
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_events.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#eacc23] card-over"
+                  >
+                    SỰ KIỆN
+                  </div>
+                </a>
+
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_update.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#ea2336] card-over"
+                  >
+                    UPDATE
+                  </div>
+                </a>
+
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_tournament.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#235bea] card-over"
+                  >
+                    GIẢI ĐẤU
+                  </div>
+                </a>
+
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_events.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#eacc23] card-over"
+                  >
+                    SỰ KIỆN
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div id="tab-news-2" class="tabs-content-news hidden">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_update.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#ea2336] card-over"
+                  >
+                    UPDATE
+                  </div>
+                </a>
+
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_events.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#eacc23] card-over"
+                  >
+                    SỰ KIỆN
+                  </div>
+                </a>
+
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_update.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#ea2336] card-over"
+                  >
+                    UPDATE
+                  </div>
+                </a>
+
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_events.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#eacc23] card-over"
+                  >
+                    SỰ KIỆN
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div id="tab-news-3" class="tabs-content-news hidden">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_tournament.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#235bea] card-over"
+                  >
+                    GIẢI ĐẤU
+                  </div>
+                </a>
+
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_tournament.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#235bea] card-over"
+                  >
+                    GIẢI ĐẤU
+                  </div>
+                </a>
+
+                <a href="" class="relative">
+                  <div class="events-card-img mb-4">
+                    <img
+                      src="./assets/images/bg_tournament.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                  </div>
+                  <p class="line-clamp-1 font-bold">
+                    Cập nhật nhân vật VVIP mới AEROMANCER & 2 QC..Cập nhật nhân
+                    vật VVIP mới AEROMANCER &
+                  </p>
+                  <p class="events-card-time">25/09/2023</p>
+                  <div
+                    class="bg-[#235bea] card-over"
+                  >
+                    GIẢI ĐẤU
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-left" class="mb-[4%]">
+          <div class="hidden lg:block">
+            <div class="flex justify-between items-center mb-[2%]">
+              <ul
+                class="tabs-nav-video flex-center space-x-[1px]"
+              >
+                <li class="tab-video tab-video-seclected">
+                  <a href="#tab-video-1">Video nổi bật</a>
+                </li>
+                <li class="tab-video">
+                  <a href="#tab-video-2">Giải đấu</a>
+                </li>
+                <li class="tab-video">
+                  <a href="#tab-video-3">Highlight</a>
+                </li>
+                <li class="tab-video">
+                  <a href="#tab-video-4">update</a>
+                </li>
+              </ul>
+              <div class="border-b border-b-[#4a4a4a] w-full text-end">
+                <a href="" class="more-btn">Đến youtube +</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="block lg:hidden w-full mb-4">
+            <select name="video" id="video" class="select-box-tab">
+              <option value="">Video nổi bật</option>
+              <option value="">Giải đấu</option>
+              <option value="">Highlight</option>
+              <option value="">Update</option>
+            </select>
+          </div>
+
+          <div class="">
+            <div id="tab-video-1" class="tabs-content-video">
+              <div
+                class="video-slick relative w-full md:w-[95%] xl:w-full mx-auto"
+              >
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab-video-2" class="tabs-content-video hidden">
+              <div
+                class="video-slick relative w-full md:w-[95%] xl:w-full mx-auto"
+              >
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab-video-3" class="tabs-content-video hidden">
+              <div
+                class="video-slick relative w-full md:w-[95%] xl:w-full mx-auto"
+              >
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab-video-4" class="tabs-content-video hidden">
+              <div
+                class="video-slick relative w-full md:w-[95%] xl:w-full mx-auto"
+              >
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+                <div class="mx-2">
+                  <div class="mb-4 relative">
+                    <img
+                      src="https://photoservice.goplay.vn/Resources/Upload/Images/Editor/0-23032021/4.png"
+                      alt=""
+                      class="aspect-video object-cover w-full"
+                    />
+                    <div
+                      class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer"
+                    >
+                      <img src="./assets/images/btn_play.png" alt="" />
+                    </div>
+                  </div>
+                  <p class="line-clamp-2">
+                    CFS Summer Championship 2023 Trailer CFS Summer Championship
+                    2023 Trailer CFS Summer Championship 2023 Trailer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-between mb-[8%]">
+          <div data-aos="zoom-in-down" class="w-full lg:w-[60%]">
+            <div class="flex space-x-[1px] border-b border-b-[#4a4a4a] mb-8">
+              <div class="tab">Webshop</div>
+            </div>
+
+            <!-- Chưa Đăng nhập -->
+            <div
+              class="flex flex-col justify-center items-center text-center mb-8"
+            >
+              <p class="mb-4">Vui lòng đăng nhập để sử dụng tính năng này!</p>
+              <a href="" class="button-base"> Đăng nhập ngay </a>
+            </div>
+
+            <!-- Đã Đăng nhập -->
+            <div class="grid grid-cols-3 gap-4 mb-8">
+              <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+              >
+                <p class="text-[14px] sm:text-base">Thẻ đổi tên thường</p>
+                <div class="">
+                  <img src="./assets/images/ic_change_ingame_name.png" alt="" />
+                </div>
+                <a href="" class="button-base"> 55 GOCOIN </a>
+              </div>
+
+              <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+              >
+                <p class="text-[14px] sm:text-base">Thẻ đổi tên đặc biệt</p>
+                <div class="">
+                  <img
+                    src="./assets/images/ic_change_ingame_name_premium.png"
+                    alt=""
+                  />
+                </div>
+                <a href="" class="button-base"> 75 GOCOIN </a>
+              </div>
+
+              <div
+                class="flex flex-col items-center justify-center space-y-4 text-center"
+              >
+                <p class="text-[14px] sm:text-base">Thẻ reset chỉ số KDA</p>
+                <div class="">
+                  <img src="./assets/images/ic_reset_kda.png" alt="" />
+                </div>
+                <a href="" class="button-base"> 55 GOCOIN </a>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in-up" class="w-full lg:w-[35%]">
+            <div class="flex space-x-[1px] border-b border-b-[#4a4a4a] mb-8">
+              <div class="tab">giftcode</div>
+            </div>
+
+            <!-- Chưa Đăng nhập -->
+            <div
+              class="flex flex-col justify-center items-center text-center mb-8"
+            >
+              <p class="mb-4">Vui lòng đăng nhập để sử dụng tính năng này!</p>
+              <a href="" class="button-base"> Đăng nhập ngay </a>
+            </div>
+
+            <!-- Đã Đăng nhập -->
+            <div
+              class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+              <p>
+                Giftcode nhận được từ các sự kiện trên Trang chủ và Fanpage của
+              </p>
+              <input
+                type="text"
+                class="max-w-[480px] px-4 py-2 border-[#c5c3c3] border-[2px] rounded-lg w-full bg-gradient-to-t from-[#e7e5e5] via-[#efeeee] via-[50%] to-[#e7e5e5]"
+              />
+              <a href="" class="button-base"> NHẬP GIFTCODE </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <img src="./assets/images/banner_footer.png" alt="" />
+        </div>
+      </div>
+
+      <div class="fixed top-[20%] left-0 z-50">
+        <div class="flex-center">
+          <div
+            class="flex flex-col space-y-6 p-2 lg:px-5 lg:py-6 text-white bg-[#ea2336] rounded-r-lg"
+          >
+            <a href="" class="flex-center space-x-4 support-method">
+              <div class="">
+                <img src="./assets/images/ic_calling.png" alt="" />
+              </div>
+              <p class="support-method_title hidden">HỖ TRỢ</p>
+            </a>
+
+            <a href="" class="flex-center space-x-4 support-method">
+              <div class="">
+                <img src="./assets/images/ic_facebook.png" alt="" />
+              </div>
+              <p class="support-method_title hidden">FANPAGE</p>
+            </a>
+
+            <a href="" class="flex-center space-x-4 support-method">
+              <div class="">
+                <img src="./assets/images/ic_facebook.png" alt="" />
+              </div>
+              <p class="support-method_title hidden">GROUP</p>
+            </a>
+
+            <a href="" class="flex-center space-x-4 support-method">
+              <div class="">
+                <img src="./assets/images/ic_tiktok.png" alt="" />
+              </div>
+              <p class="support-method_title hidden">TIKTOK</p>
+            </a>
+
+            <a href="" class="flex-center space-x-4 support-method">
+              <div class="">
+                <img src="./assets/images/ic_youtube.png" alt="" />
+              </div>
+              <p class="support-method_title hidden">YOUTUBE</p>
+            </a>
+
+            <a href="" class="flex-center space-x-4 support-method">
+              <div class="">
+                <img src="./assets/images/ic_discord.png" alt="" />
+              </div>
+              <p class="support-method_title hidden">DISCORD</p>
+            </a>
+          </div>
+          <div id="more_contact" class="relative cursor-pointer">
+            <canvas id="more_btn_left" width="20" height="150"></canvas>
+            <img
+              src="./assets/images/ic_more_arrow.png"
+              alt=""
+              class="more-arrow-left more-arrow rotate-180"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="fixed top-[20%] right-0 z-50">
+        <div class="flex flex-row-reverse justify-center items-center">
+          <div
+            class="flex flex-col space-y-6 px-5 py-6 text-white bg-[#161616] rounded-l-lg"
+          >
+            <a href="">
+              <img src="./assets/images/bg_events_khacan.png" alt="" />
+            </a>
+
+            <a href="">
+              <img src="./assets/images/bg_events_khacan.png" alt="" />
+            </a>
+
+            <a href="">
+              <img src="./assets/images/bg_events_khacan.png" alt="" />
+            </a>
+          </div>
+          <div id="more_contact" class="relative cursor-pointer">
+            <canvas id="more_btn_right" width="20" height="150"></canvas>
+            <img
+              src="./assets/images/ic_more_arrow.png"
+              alt=""
+              class="more-arrow rotate-180"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="fixed bottom-[5%] left-[3%]">
+      <img src="./assets/images/ic_mesage.png" alt="">
+    </div>
+
+    <footer class="w-full">
+      <img src="./assets/images/footer.png" alt="" />
+    </footer>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/toastify-js.js"></script>
+    <script src="./assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+
+    <script>
+      var c = document.getElementById("more_btn_left");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.lineTo(20, 20);
+      ctx.lineTo(20, 130);
+      ctx.lineTo(0, 150);
+      ctx.stroke();
+      ctx.fillStyle = "#ea2336";
+      ctx.fill();
+      ctx.strokeStyle = "#ea2336";
+      ctx.stroke();
+
+      var c = document.getElementById("more_btn_right");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.moveTo(20, 0);
+      ctx.lineTo(0, 20);
+      ctx.lineTo(0, 130);
+      ctx.lineTo(20, 150);
+      ctx.stroke();
+      ctx.fillStyle = "#161616";
+      ctx.fill();
+      ctx.strokeStyle = "#161616";
+      ctx.stroke();
+    </script>
+  </body>
 </html>
