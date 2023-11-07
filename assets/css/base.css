@@ -6,3 +6,23 @@
 
 @media screen and (min-width: 1024px) {
 }
+
+.container-contents {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+select {
+    outline: none;
+}
+
+.button-base:hover,
+.button-base:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #e82336;
+  transform: translateY(-0.25em);
+}
+

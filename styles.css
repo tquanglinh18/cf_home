@@ -1,3 +1,99 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .header-1 {
+    @apply flex items-center justify-end px-4 py-3 space-x-2 border-b-[#c5c3c3] border-b-[2px];
+  }
+
+  .header_info-title {
+    @apply text-[12px] font-bold;
+  }
+
+  .header-1_button {
+    @apply border border-[#c5c3c3] py-1 min-w-[90px] rounded-md text-center text-[12px] hover:bg-[#e82336] hover:text-white;
+  }
+
+  .header-2_logo {
+    @apply flex justify-center items-center border-b-[#c5c3c3] border-b-[4px] xl:px-4 2xl:px-8;
+  }
+
+  .header-2_logo-image {
+    @apply lg:min-w-[184px] 2xl:min-w-[220px] py-2 md:px-4 lg:px-8;
+  }
+
+  .header-2_download {
+    @apply w-full flex justify-end border-b-[#c5c3c3] border-b-[4px] pl-2;
+  }
+  .btn-header {
+    @apply w-full h-full flex items-center justify-center hover:text-white hover:bg-[#e82336] hover:border-b-white hover:border-b-[4px];
+  }
+
+  .btn-header_title {
+    @apply text-center text-[10px] xl:text-[14px];
+  }
+
+  .btn-header_backgound {
+    @apply min-w-[100px] xl:min-w-[130px] 2xl:min-w-[150px] bg-gradient-to-t from-[#dadada] to-white px-[2px] flex justify-center items-center;
+  }
+  .btn-header_active {
+    @apply text-white bg-[#e82336] border-b-white border-b-[4px];
+  }
+
+  .btn-header_unactive {
+    @apply bg-[#f1f1f1] border-b-[#e82336] border-b-[4px];
+  }
+
+  .tab-news,
+  .tab-video {
+    @apply border-b-[#4a4a4a] border-b-[3px] uppercase min-w-[160px] text-center hover:text-[#e82336] hover:border-b-[#e82336] cursor-pointer;
+  }
+
+  .tab {
+    @apply border-b-[#4a4a4a] border-b-[3px] uppercase min-w-[160px] text-center;
+  }
+
+  .tab-news-seclected,
+  .tab-video-seclected {
+    @apply text-[#e82336] border-b-[#e82336] border-b-[3px];
+  }
+
+  .more-btn {
+    @apply hover:text-[#e82336] hover:border-b-[#e82336] cursor-pointer uppercase;
+  }
+
+  .select-box-tab {
+    @apply border-b-[#e82336] border-b-[3px] w-full uppercase text-[#e82336] text-start px-4 py-2;
+  }
+
+  .support-method_title {
+    @apply text-[12px];
+  }
+
+  .events-card-title {
+    @apply line-clamp-1 font-bold mb-2;
+  }
+
+  .events-card-time {
+    @apply line-clamp-1 text-[12px];
+  }
+
+  .card-over {
+    @apply px-4 py-1 absolute top-[5%] right-[5%] text-white text-[12px] md:text-[14px];
+  }
+}
+
+@layer base {
+  .button-base {
+    @apply px-4 py-2 bg-[#e82336] uppercase text-center text-white w-fit mx-auto text-[12px] md:text-[14px] lg:text-base;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .more-arrow {
+    @apply absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%];
+  }
+}
