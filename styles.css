@@ -80,7 +80,19 @@
   }
 
   .card-over {
-    @apply px-4 py-1 absolute top-[5%] right-[5%] text-white text-[12px] md:text-[14px];
+    @apply px-4 py-1 absolute top-[5%] right-[5%] text-white text-[12px];
+  }
+
+  .type-news {
+    @apply px-4 py-1 text-white text-[12px]
+  }
+
+  .page-title {
+    @apply py-8 text-[48px] font-bold
+  }
+
+  .news-title {
+    @apply text-[24px] md:text-[26px] lg:text-[28px] font-bold w-full text-center mb-4 uppercase
   }
 }
 
