@@ -16,11 +16,11 @@
   }
 
   .header-2_logo {
-    @apply flex justify-center items-center border-b-[#c5c3c3] border-b-[4px] xl:px-4 2xl:px-8;
+    @apply flex justify-center items-center border-b-[#c5c3c3] border-b-[4px] p-2 xl:px-4 2xl:px-8;
   }
 
   .header-2_logo-image {
-    @apply lg:min-w-[184px] 2xl:min-w-[220px] py-2 md:px-4 lg:px-8;
+    @apply max-w-[184px] lg:min-w-[184px] 2xl:min-w-[220px] py-2 md:px-4 lg:px-8;
   }
 
   .header-2_download {

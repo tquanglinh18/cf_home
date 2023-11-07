@@ -111,8 +111,8 @@
   width: 25px;
   height: 3px;
   cursor: pointer;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
   background-color: white;
 }
 
@@ -138,6 +138,8 @@
   .slick-dots li {
     width: 70px;
     height: 6px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 }
 
