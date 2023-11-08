@@ -150,13 +150,13 @@
           <div class="hidden lg:block">
             <div class="flex justify-between items-center mb-[2%]">
               <ul class="tabs-nav-news flex-center space-x-[1px]">
-                <li class="tab-news tab-news-seclected">
-                  <a href="#tab-news-1">Tin tức nổi bật</a>
+                <li class="tabs-option tabs-seclected">
+                  <a href="#tabs-news-1">Tin tức nổi bật</a>
                 </li>
-                <li class="tab-news">
-                  <a href="#tab-news-2">SỰ KIỆN/Update</a>
+                <li class="tabs-option">
+                  <a href="#tabs-news-2">SỰ KIỆN/Update</a>
                 </li>
-                <li class="tab-news"><a href="#tab-news-3">Giải đấu</a></li>
+                <li class="tabs-option"><a href="#tabs-news-3">Giải đấu</a></li>
               </ul>
               <div class="border-b border-b-[#4a4a4a] w-full text-end">
                 <a href="" class="more-btn">Xem thêm +</a>
@@ -166,15 +166,15 @@
           <div class="block lg:hidden w-full mb-4">
             <select name="news" id="news" class="select-box-tab">
               <option value="">
-                <a href="#tab-news-1">Tin tức nổi bật</a>
+                <a href="#tabs-news-1">Tin tức nổi bật</a>
               </option>
-              <option value=""><a href="#tab-news-2">SỰ KIỆN/Update</a></option>
-              <option value=""><a href="#tab-news-3">Giải đấu</a></option>
+              <option value=""><a href="#tabs-news-2">SỰ KIỆN/Update</a></option>
+              <option value=""><a href="#tabs-news-3">Giải đấu</a></option>
             </select>
           </div>
 
           <div>
-            <div id="tab-news-1" class="tabs-content-news">
+            <div id="tabs-news-1" class="tabs-content-news">
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <a href="" class="relative">
                   <div class="events-card-img mb-4">
@@ -273,7 +273,7 @@
                 </a>
               </div>
             </div>
-            <div id="tab-news-2" class="tabs-content-news hidden">
+            <div id="tabs-news-2" class="tabs-content-news hidden">
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <a href="" class="relative">
                   <div class="events-card-img mb-4">
@@ -340,7 +340,7 @@
                 </a>
               </div>
             </div>
-            <div id="tab-news-3" class="tabs-content-news hidden">
+            <div id="tabs-news-3" class="tabs-content-news hidden">
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <a href="" class="relative">
                   <div class="events-card-img mb-4">
@@ -398,17 +398,17 @@
           <div class="hidden lg:block">
             <div class="flex justify-between items-center mb-[2%]">
               <ul class="tabs-nav-video flex-center space-x-[1px]">
-                <li class="tab-video tab-video-seclected">
-                  <a href="#tab-video-1">Video nổi bật</a>
+                <li class="tabs-option tabs-seclected">
+                  <a href="#tabs-video-1">Video nổi bật</a>
                 </li>
-                <li class="tab-video">
-                  <a href="#tab-video-2">Giải đấu</a>
+                <li class="tabs-option">
+                  <a href="#tabs-video-2">Giải đấu</a>
                 </li>
-                <li class="tab-video">
-                  <a href="#tab-video-3">Highlight</a>
+                <li class="tabs-option">
+                  <a href="#tabs-video-3">Highlight</a>
                 </li>
-                <li class="tab-video">
-                  <a href="#tab-video-4">update</a>
+                <li class="tabs-option">
+                  <a href="#tabs-video-4">update</a>
                 </li>
               </ul>
               <div class="border-b border-b-[#4a4a4a] w-full text-end">
@@ -427,7 +427,7 @@
           </div>
 
           <div class="">
-            <div id="tab-video-1" class="tabs-content-video">
+            <div id="tabs-video-1" class="tabs-content-video">
               <div
                 class="video-slick relative w-full md:w-[95%] xl:w-full mx-auto"
               >
@@ -614,7 +614,7 @@
               </div>
             </div>
 
-            <div id="tab-video-2" class="tabs-content-video hidden">
+            <div id="tabs-video-2" class="tabs-content-video hidden">
               <div
                 class="video-slick relative w-full md:w-[95%] xl:w-full mx-auto"
               >
@@ -801,7 +801,7 @@
               </div>
             </div>
 
-            <div id="tab-video-3" class="tabs-content-video hidden">
+            <div id="tabs-video-3" class="tabs-content-video hidden">
               <div
                 class="video-slick relative w-full md:w-[95%] xl:w-full mx-auto"
               >
@@ -988,7 +988,7 @@
               </div>
             </div>
 
-            <div id="tab-video-4" class="tabs-content-video hidden">
+            <div id="tabs-video-4" class="tabs-content-video hidden">
               <div
                 class="video-slick relative w-full md:w-[95%] xl:w-full mx-auto"
               >
@@ -1262,10 +1262,10 @@
         </div>
       </div>
 
-      <div class="hidden lg:block fixed top-[20%] left-0 z-50">
+      <div class="lg:block fixed top-[20%] left-0 z-50">
         <div class="flex-center">
           <div
-            class="flex flex-col space-y-6 p-2 lg:px-5 lg:py-6 text-white bg-[#ea2336] rounded-r-lg"
+            class="flex flex-col items-start space-y-6 p-2 lg:px-5 lg:py-6 text-white bg-[#ea2336] rounded-r-lg"
           >
             <a href="" class="flex-center space-x-4 support-method">
               <div class="">
@@ -1388,6 +1388,94 @@
       ctx.fill();
       ctx.strokeStyle = "#161616";
       ctx.stroke();
+    </script>
+
+    <script>
+      
+  $(".tabs-nav-news a").click(function () {
+    // Check for active
+    $(".tabs-nav-news li").removeClass("tabs-seclected");
+    $(this).parent().addClass("tabs-seclected");
+
+    // Display active tab
+    let currentTab = $(this).attr("href");
+    $(".tabs-content-news").hide();
+    $(currentTab).show();
+    return false;
+  });
+
+
+  $(".tabs-nav-video a").click(function () {
+    // Check for active
+    $(".tabs-nav-video li").removeClass("tabs-seclected");
+    $(this).parent().addClass("tabs-seclected");
+
+    // Display active tab
+    let currentTab = $(this).attr("href");
+    $(".tabs-content-video").hide();
+    $(currentTab).show();
+    return false;
+  });
+
+  $(".main-slick").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    speed: 700,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: false,
+    nextArrow: false,
+  });
+
+  $(".video-slick").slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    speed: 700,
+    adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    prevArrow: `<div class="video-pre-btn">
+    <img src="./assets/images/btn_next.png" alt="">
+   </div>`,
+    nextArrow: `<div class="video-next-btn">
+    <img src="./assets/images/btn_next.png" alt="">
+   </div>`,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
+  });
     </script>
   </body>
 </html>
