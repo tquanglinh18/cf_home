@@ -4,7 +4,7 @@ $(document).ready(function () {
     anchorPlacement: 'top'
   });
   $("#more_contact").click(() => {
-    $(".support-method_title").toggle("hidden");
+    $(".support-method__title").toggle("hidden");
     $(".more-arrow-left").toggleClass("rotate-180");
   });
 
