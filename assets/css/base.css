@@ -108,3 +108,9 @@ select {
   transform: translateY(-0.25em);
 }
 
+.button-cancel-base:hover,
+.button-cancel-base:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #555555;
+  transform: translateY(-0.25em);
+}
+

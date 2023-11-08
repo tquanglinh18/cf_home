@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CF</title>
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/toastify.min.css" />
+  </head>
+
+  <body>
+    <section>
+      <!-- XÁC NHẬN -->
+      <div class="pop-up hidden">
+        <h3 class="pop-up__title">Thông báo</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+          Bạn đang sử dụng Giftcode
+          <span class="pop-up__contents--highlight">tanbinhcf2023</span> cho tài
+          khoản <span class="pop-up__contents--highlight">vtconline</span>
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__list-button">
+          <div class="button-base">XÁC NHẬN</div>
+
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+      <!-- GIFCODE KHÔNG TỒN TẠI -->
+      <div class="pop-up hidden">
+        <h3 class="pop-up__title">Thông báo</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+          <span class="pop-up__contents--highlight"> Giftcode không tồn tại!</span> Vui lòng kiểm tra lại!
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__list-button">
+          <div class="button-base">XÁC NHẬN</div>
+
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+       <!-- GIFTCODE THÀNH CÔNG -->
+       <div class="pop-up hidden">
+        <h3 class="pop-up__title">Thông báo</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+          <span class="pop-up__contents--highlight">Giftcode đã nhận thành công! </span>  Vui lòng truy cập trò chơi để kiểm tra phần quà.
+          Truy cập kho đồ để kiểm tra vũ khí và các vật phẩm chức năng, nếu chưa thấy phần quà
+          hãy chọn lại máy chủ và thử lại.
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__list-button">
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+      <!-- XÁC NHẬN ĐỔI TÊN THƯỜNG -->
+      <div class="pop-up max-w-[830px] hidden">
+        <h3 class="pop-up__title">THẺ ĐỔI TÊN THƯỜNG - 55 GOCOIN</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+          <div class="flex justify-between mb-6">
+            <div class="name-used flex space-x-1 items-center w-[45%]">
+                <label for="name-used">Tên đã sử dụng:</label>
+                <input
+                type="text"
+                id="name-used"
+                class="max-w-[196px] px-4 py-2 border-[#c5c3c3] border-[2px] rounded-lg w-full bg-gradient-to-t from-[#e7e5e5] via-[#efeeee] via-[50%] to-[#e7e5e5]"
+              />
+            </div>
+
+            <div class="name-new  flex space-x-1 items-center w-[45%]">
+                <label for="name-new">Tên mới:</label>
+                <input
+                type="text"
+                id="name-new"
+                class="max-w-[196px] px-4 py-2 border-[#c5c3c3] border-[2px] rounded-lg w-full bg-gradient-to-t from-[#e7e5e5] via-[#efeeee] via-[50%] to-[#e7e5e5]"
+              />
+            </div>
+          </div>
+          <ul class="text-start">
+            <li>Chữ cái hoặc chữ số từ: A đến Z hoặc a đến z hoặc 0 đến 9</li>
+            <li>Ký tự thông thường cho phép: ^ * ( ) _ - [ ] . @</li>
+            <li>
+                <p>Quy định đổi tên:</p>
+                <ul class="px-4">
+                    <li>- Thẻ đổi tên có thể đổi tên từ 4-12 ký tự.</li>
+                    <li>- Các ký tự đặt tên như có liên quan tới từ Admin,GM,VTC,Goplay,các từ nghĩa chính trị,tên lãnh tụ,
+                        kích động, phân biệt vùng miền sẽ bị khóa ngay lập tức.</li>
+                        <li>- Nếu vi phạm liên hệ Fanpage để được hỗ trợ và bắt buộc phải đổi tên hợp lệ.</li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt=""/>
+        </div>
+
+        <div class="pop-up__list-button">
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+      <!-- XÁC NHẬN ĐỔI TÊN ĐĂC BIỆT -->
+      <div class="pop-up max-w-[830px] hidden">
+        <h3 class="pop-up__title">THẺ ĐỔI TÊN ĐẶC BIỆT - 75 GOCOIN</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+          <div class="flex justify-between mb-6">
+            <div class="name-used flex space-x-1 items-center w-[45%]">
+                <label for="name-used">Tên đã sử dụng:</label>
+                <input
+                type="text"
+                id="name-used"
+                class="max-w-[196px] px-4 py-2 border-[#c5c3c3] border-[2px] rounded-lg w-full bg-gradient-to-t from-[#e7e5e5] via-[#efeeee] via-[50%] to-[#e7e5e5]"
+              />
+            </div>
+
+            <div class="name-new  flex space-x-1 items-center w-[45%]">
+                <label for="name-new">Tên mới:</label>
+                <input
+                type="text"
+                id="name-new"
+                class="max-w-[196px] px-4 py-2 border-[#c5c3c3] border-[2px] rounded-lg w-full bg-gradient-to-t from-[#e7e5e5] via-[#efeeee] via-[50%] to-[#e7e5e5]"
+              />
+            </div>
+          </div>
+          <ul class="text-start">
+            <li>Chữ cái hoặc chữ số từ: A đến Z hoặc a đến z hoặc 0 đến 9</li>
+            <li>Ký tự thông thường cho phép: ^ * ( ) _ - [ ] . @</li>
+            <li>Ký tự đặc biệt cho phép: ¤ § # Ç ü é â ä à å ç ê ë è ï î Ä Å É æ Æ ô ö û ù ÿ Ö Ü á í ó ú ñ Ñ ª º ¿ ¬ ½ ¼ ¡ « » ß µ
+                ± ÷ ° · ² ¢ £ ¤ ¥ ¦ § ¨ © ® ¯ ³ ¶ ¹ ¾ È Ê Ë Í Î Ï Ó Ô × Ø Ù Ú Û ø </li>
+            <li>
+                <p>Quy định đổi tên:</p>
+                <ul class="px-4">
+                    <li>- Thẻ đổi tên có thể đổi tên từ 4-12 ký tự.</li>
+                    <li>- Các ký tự đặt tên như có liên quan tới từ Admin,GM,VTC,Goplay,các từ nghĩa chính trị,tên lãnh tụ,
+                        kích động, phân biệt vùng miền sẽ bị khóa ngay lập tức.</li>
+                        <li>- Nếu vi phạm liên hệ Fanpage để được hỗ trợ và bắt buộc phải đổi tên hợp lệ.</li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt=""/>
+        </div>
+
+        <div class="pop-up__list-button">
+            <div class="button-base">XÁC NHẬN ĐỔI TÊN</div>
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+      <!-- XÁC NHẬN ĐỔI TÊN CẤP 2 -->
+      <div class="pop-up hidden">
+        <h3 class="pop-up__title">Thông báo</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+          Bạn đang thực hiện mua và sử dụng
+          <span class="pop-up__contents--highlight">Thẻ Đổi Tên Thường</span> cho nhân vật <span class="pop-up__contents--highlight">vtconline</span>
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__list-button">
+          <div class="button-base">XÁC NHẬN</div>
+
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+      <!-- XÁC NHẬN TÊN BỊ TRÙNG -->
+      <div class="pop-up hidden">
+        <h3 class="pop-up__title">Thông báo</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+            Tên 
+          <span class="pop-up__contents--highlight"> vtconline </span> đã được sử dụng, vui lòng thử lại!
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__list-button">
+
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+      <!-- XÁC NHẬN ĐỔI TÊN THÀNH CÔNG -->
+      <div class="pop-up hidden">
+        <h3 class="pop-up__title">Thông báo</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+            Đổi tên nhân vật thành công!
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__list-button">
+
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+      <!-- KHÔNG ĐỦ SỐ DƯ -->
+      <div class="pop-up hidden">
+        <h3 class="pop-up__title">XÁC NHẬN ĐỔI TÊN</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+          Tài khoản của bạn 
+          <span class="pop-up__contents--highlight">không đủ số dư</span> để thực hiện thao tác này!
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__list-button">
+          <div class="button-base">Nạp GoCoin</div>
+
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+      <!-- XÁC NHẬN ĐỔI TÊN THƯỜNG -->
+      <div class="pop-up max-w-[830px] hidden">
+        <h3 class="pop-up__title">THẺ RESET KILL/DEATH - 55 GOCOIN</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+            <div class="username flex-center space-x-1 items-center w-full mb-6">
+                <label for="username">Nhân vật:</label>
+                <input
+                type="text"
+                id="name-used"
+                class="max-w-[196px] px-4 py-2 border-[#c5c3c3] border-[2px] rounded-lg w-full bg-gradient-to-t from-[#e7e5e5] via-[#efeeee] via-[50%] to-[#e7e5e5]"
+              />
+            </div>
+            <p class="mb-6">CHỈ SỐ KILL: <span class="pop-up__contents--highlight"> 78</span> - CHỈ SỐ DEATH: <span class="pop-up__contents--highlight"> 78</span></p>
+            <p>Chỉ có thể reset chỉ số Kill/Death. Các chỉ số và thông tin khác được giữ nguyên. </p>
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt=""/>
+        </div>
+
+        <div class="pop-up__list-button">
+            <div class="button-base">XÁC NHẬN RESET</div>
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+      <!-- XÁC NHẬN RESET KDA CẤP 2 -->
+      <div class="pop-up hidden">
+        <h3 class="pop-up__title">XÁC NHẬN RESET KILL/DEATH</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+          Bạn đang thực hiện mua và sử dụng
+          <span class="pop-up__contents--highlight">Thẻ reset Kill/Death</span> cho nhân vật <span class="pop-up__contents--highlight">vtconline</span>
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__list-button">
+          <div class="button-base">XÁC NHẬN</div>
+
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+      <!-- XÁC NHẬN RESET KDA THÀNH CÔNG -->
+      <div class="pop-up hidden">
+        <h3 class="pop-up__title">XÁC NHẬN RESET KILL/DEATH</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+            Reset Kill/Death thành công!
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__list-button">
+
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+      <!-- KHÔNG ĐỦ SỐ DƯ -->
+      <div class="pop-up hidden">
+        <h3 class="pop-up__title">XÁC NHẬN ĐỔI TÊN</h3>
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__contents">
+          Tài khoản của bạn 
+          <span class="pop-up__contents--highlight">không đủ số dư</span> để thực hiện thao tác này!
+        </div>
+
+        <div class="pop-up--line-space">
+          <img src="./assets/images/line_pop_up.png" alt="" />
+        </div>
+
+        <div class="pop-up__list-button">
+          <div class="button-base">Nạp GoCoin</div>
+
+          <div class="button-cancel-base">HUỶ BỎ</div>
+        </div>
+      </div>
+
+    </section>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/toastify-js.js"></script>
+    <script src="./assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

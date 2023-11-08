@@ -20,12 +20,13 @@
       <div data-aos="fade-right" class="mb-[4%]">
         <div class="hidden lg:block">
           <div class="flex justify-between items-center mb-[2%]">
-            <ul class="tabs-nav-news flex-center space-x-[1px]">
-              
-              <li class="tab-news tab-news-seclected">
-                <a href="#tab-news-1">SỰ KIỆN/Update</a>
+            <ul class="tabs-nav-events-update flex-center space-x-[1px]">
+              <li class="tabs-option tabs-seclected">
+                <a href="#tabs-events-update-1">SỰ KIỆN/Update</a>
               </li>
-              <li class="tab-news"><a href="#tab-news-2">Giải đấu</a></li>
+              <li class="tabs-option">
+                <a href="#tabs-events-update-2">Giải đấu</a>
+              </li>
             </ul>
             <div class="border-b border-b-[#4a4a4a] w-full text-end">
               <a href="" class="more-btn">Xem thêm +</a>
@@ -35,14 +36,16 @@
         <div class="block lg:hidden w-full mb-4">
           <select name="news" id="news" class="select-box-tab">
             <option value="">
-              <a href="#tab-news-1">SỰ KIỆN/Update</a>
+              <a href="#tabs-events-update-1">SỰ KIỆN/Update</a>
             </option>
-            <option value=""><a href="#tab-news-2">Giải đấu</a></option>
+            <option value="">
+              <a href="#tabs-events-update-2">Giải đấu</a>
+            </option>
           </select>
         </div>
 
         <div>
-          <div id="tab-news-1" class="tabs-content-news">
+          <div id="tabs-events-update-1" class="tabs-events-update-content">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <a href="" class="relative">
                 <div class="events-card-img mb-4">
@@ -109,7 +112,7 @@
               </a>
             </div>
           </div>
-          <div id="tab-news-2" class="tabs-content-news hidden">
+          <div id="tabs-events-update-2" class="tabs-events-update-content hidden">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <a href="" class="relative">
                 <div class="events-card-img mb-4">
@@ -167,5 +170,19 @@
     <script src="./assets/js/toastify-js.js"></script>
     <script src="./assets/js/jquery-3.6.3.min.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <script>
+      $(".tabs-nav-events-update a").click(function () {
+        // Check for active
+        $(".tabs-nav-events-update li").removeClass("tabs-seclected");
+        $(this).parent().addClass("tabs-seclected");
+
+        // Display active tab
+        let currentTab = $(this).attr("href");
+        $(".tabs-events-update-content").hide();
+        $(currentTab).show();
+        return false;
+      });
+    </script>
   </body>
 </html>

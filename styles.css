@@ -96,7 +96,11 @@
 
 @layer base {
   .button-base {
-    @apply px-4 py-2 bg-[#e82336] uppercase text-center text-white w-fit mx-auto text-[12px] md:text-[14px] lg:text-base;
+    @apply px-4 py-1 min-w-[120px] bg-[#e82336] uppercase text-center text-white w-fit text-[12px] md:text-[14px] lg:text-base;
+  }
+
+  .button-cancel-base {
+    @apply px-4 py-1 min-w-[120px] bg-[#555555] uppercase text-center text-white w-fit text-[12px] md:text-[14px] lg:text-base;
   }
 
   .flex-center {
@@ -113,5 +117,28 @@
 
   .sub-heading{
     @apply font-semibold px-2
+  }
+
+  .pop-up{
+    @apply max-w-[600px] w-full border-[2px] border-[#c4c2c3] rounded-sm px-4 py-8 shadow-2xl
+  }
+
+  .pop-up__title {
+    @apply font-bold text-[24px] text-[#e82336] text-center uppercase
+  }
+  .pop-up__contents {
+    @apply text-center px-6
+  }
+
+  .pop-up__contents--highlight {
+    @apply text-[#ea2336] font-semibold
+  }
+
+  .pop-up__list-button{
+    @apply flex space-x-4 items-center justify-center
+  }
+
+  .pop-up--line-space{
+    @apply py-6 flex justify-center items-center
   }
 }
