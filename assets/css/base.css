@@ -195,6 +195,7 @@
 
 body {
   font-family: "SVN-Nolan Next";
+  background-color: #f7f7f7;
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -233,5 +234,9 @@ select {
 .button-cancel-base:focus {
   box-shadow: 0 0.5em 0.5em -0.4em #555555;
   transform: translateY(-0.25em);
+}
+
+.card-items-shadown {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
