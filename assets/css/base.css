@@ -1,79 +1,200 @@
-
 @font-face {
-  font-family: 'Nolan Next';
-  src: url('../assets/fonts/NolanNext-Bold.eot');
-  src: url('../assets/fonts/NolanNext-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/NolanNext-Bold.woff2') format('woff2'),
-      url('../assets/fonts/NolanNext-Bold.woff') format('woff'),
-      url('../assets/fonts/NolanNext-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Nolan Next';
-  src: url('../assets/fonts/NolanNext-ExtraBold.eot');
-  src: url('../assets/fonts/NolanNext-ExtraBold.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/NolanNext-ExtraBold.woff2') format('woff2'),
-      url('../assets/fonts/NolanNext-ExtraBold.woff') format('woff'),
-      url('../assets/fonts/NolanNext-ExtraBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Nolan Next';
-  src: url('../assets/fonts/NolanNext-Italic.eot');
-  src: url('../assets/fonts/NolanNext-Italic.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/NolanNext-Italic.woff2') format('woff2'),
-      url('../assets/fonts/NolanNext-Italic.woff') format('woff'),
-      url('../assets/fonts/NolanNext-Italic.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-ThinItalic.eot');
+  src: url('../fonts/SVN-NolanNext-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-ThinItalic.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-ThinItalic.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Nolan Next';
-  src: url('../assets/fonts/NolanNext-Light.eot');
-  src: url('../assets/fonts/NolanNext-Light.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/NolanNext-Light.woff2') format('woff2'),
-      url('../assets/fonts/NolanNext-Light.woff') format('woff'),
-      url('../assets/fonts/NolanNext-Light.ttf') format('truetype');
+  font-family: 'SVN-Nolan Next Med';
+  src: url('../fonts/SVN-NolanNext-MediumItalic.eot');
+  src: url('../fonts/SVN-NolanNext-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-MediumItalic.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-MediumItalic.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-Thin.eot');
+  src: url('../fonts/SVN-NolanNext-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-Thin.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-Thin.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-Regular.eot');
+  src: url('../fonts/SVN-NolanNext-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-Regular.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-Regular.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-Medium.eot');
+  src: url('../fonts/SVN-NolanNext-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-Medium.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-Medium.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-Light.eot');
+  src: url('../fonts/SVN-NolanNext-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-Light.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-Light.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Nolan Next';
-  src: url('../assets/fonts/NolanNext-Regular.eot');
-  src: url('../assets/fonts/NolanNext-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/NolanNext-Regular.woff2') format('woff2'),
-      url('../assets/fonts/NolanNext-Regular.woff') format('woff'),
-      url('../assets/fonts/NolanNext-Regular.ttf') format('truetype');
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-HeavyItalic.eot');
+  src: url('../fonts/SVN-NolanNext-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-HeavyItalic.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-HeavyItalic.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-HeavyItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-LightItalic.eot');
+  src: url('../fonts/SVN-NolanNext-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-LightItalic.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-LightItalic.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-Heavy.eot');
+  src: url('../fonts/SVN-NolanNext-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-Heavy.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-Heavy.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-ExtraBold.eot');
+  src: url('../fonts/SVN-NolanNext-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-ExtraBold.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-ExtraBold.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-Italic.eot');
+  src: url('../fonts/SVN-NolanNext-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-Italic.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-Italic.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next Book';
+  src: url('../fonts/SVN-NolanNext-BookItalic.eot');
+  src: url('../fonts/SVN-NolanNext-BookItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-BookItalic.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-BookItalic.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-BookItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-ExtraBoldItalic.eot');
+  src: url('../fonts/SVN-NolanNext-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-ExtraBoldItalic.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-ExtraBoldItalic.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next Book';
+  src: url('../fonts/SVN-NolanNext-Book.eot');
+  src: url('../fonts/SVN-NolanNext-Book.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-Book.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-Book.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-Book.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Nolan Next';
-  src: url('../assets/fonts/NolanNext-Medium.eot');
-  src: url('../assets/fonts/NolanNext-Medium.eot?#iefix') format('embedded-opentype'),
-      url('../assets/fonts/NolanNext-Medium.woff2') format('woff2'),
-      url('../assets/fonts/NolanNext-Medium.woff') format('woff'),
-      url('../assets/fonts/NolanNext-Medium.ttf') format('truetype');
-  font-weight: 500;
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-BoldItalic.eot');
+  src: url('../fonts/SVN-NolanNext-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-BoldItalic.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-BoldItalic.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Nolan Next';
+  src: url('../fonts/SVN-NolanNext-Bold.eot');
+  src: url('../fonts/SVN-NolanNext-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SVN-NolanNext-Bold.woff2') format('woff2'),
+      url('../fonts/SVN-NolanNext-Bold.woff') format('woff'),
+      url('../fonts/SVN-NolanNext-Bold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 
+
+
 body {
-  font-family: "Nolan Next";
+  font-family: "SVN-Nolan Next";
   font-weight: normal;
   font-style: normal;
   font-display: swap;

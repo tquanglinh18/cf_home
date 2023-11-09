@@ -103,9 +103,11 @@
 
 .slick-dots {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
-  bottom: 5%;
   left: 15%;
+  bottom: 7%;
 }
 .slick-dots li {
   width: 25px;
@@ -119,7 +121,6 @@
 .slick-dots .slick-active {
   background-color: #e82336;
 }
-
 
 @media screen and (min-width: 640px) {
   .slick-dots li {
@@ -143,6 +144,16 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .slick-dots {
+    width: 100%;
+    max-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 7%;
+  }
+}
+
 .video-slick .video-pre-btn {
   position: absolute;
   z-index: 10;
@@ -161,4 +172,3 @@
   cursor: pointer;
   transform: translateX(200%);
 }
-
