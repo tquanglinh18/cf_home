@@ -70,7 +70,7 @@
   }
 
   .events-card__title {
-    @apply line-clamp-1 font-bold mb-2;
+    @apply line-clamp-2 overflow-clip font-bold mb-2;
   }
 
   .events-card__time {
@@ -78,7 +78,11 @@
   }
 
   .card-over {
-    @apply px-4 py-1 absolute top-[5%] right-[5%] text-white text-[12px];
+    @apply absolute top-[5%] right-[5%]
+  }
+
+  .card-over__items {
+    @apply px-4 py-1 text-white text-[12px];
   }
 
   .type-news {
@@ -168,11 +172,11 @@
 
 @layer base {
   .button-base {
-    @apply px-4 py-1 min-w-[120px] bg-[#e82336] uppercase text-center text-white w-fit text-[12px] md:text-[14px] lg:text-base;
+    @apply px-4 py-1 min-w-[120px] bg-[#e82336] uppercase text-center text-white w-fit text-[12px] md:text-[14px] lg:text-base cursor-pointer;
   }
 
   .button-cancel-base {
-    @apply px-4 py-1 min-w-[120px] bg-[#555555] uppercase text-center text-white w-fit text-[12px] md:text-[14px] lg:text-base;
+    @apply px-4 py-1 min-w-[120px] bg-[#555555] uppercase text-center text-white w-fit text-[12px] md:text-[14px] lg:text-base cursor-pointer;
   }
 
   .flex-center {

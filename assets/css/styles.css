@@ -438,6 +438,7 @@ video {
   width: -moz-fit-content;
   width: fit-content;
   min-width: 120px;
+  cursor: pointer;
   --tw-bg-opacity: 1;
   background-color: rgb(232 35 54 / var(--tw-bg-opacity));
   padding-left: 1rem;
@@ -468,6 +469,7 @@ video {
   width: -moz-fit-content;
   width: fit-content;
   min-width: 120px;
+  cursor: pointer;
   --tw-bg-opacity: 1;
   background-color: rgb(85 85 85 / var(--tw-bg-opacity));
   padding-left: 1rem;
@@ -926,7 +928,8 @@ video {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
+  overflow: clip;
   font-weight: 700;
 }
 
@@ -942,6 +945,9 @@ video {
   position: absolute;
   top: 5%;
   right: 5%;
+}
+
+.card-over__items {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.25rem;
