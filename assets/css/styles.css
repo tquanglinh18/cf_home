@@ -775,14 +775,13 @@ video {
   }
 }
 
-.header-2_download {
+.button-option-header-2 {
   display: flex;
   width: 100%;
   justify-content: flex-end;
   border-bottom-width: 4px;
   --tw-border-opacity: 1;
   border-bottom-color: rgb(197 195 195 / var(--tw-border-opacity));
-  padding-left: 0.5rem;
 }
 
 .btn-header {
@@ -1550,10 +1549,6 @@ video {
   height: 100%;
 }
 
-.w-\[200px\] {
-  width: 200px;
-}
-
 .w-\[45\%\] {
   width: 45%;
 }
@@ -1775,6 +1770,12 @@ video {
   color: rgb(234 35 54 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:mb-8 {
     margin-bottom: 2rem;
@@ -1806,11 +1807,5 @@ video {
 
   .lg\:flex-row {
     flex-direction: row;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:w-\[280px\] {
-    width: 280px;
   }
 }
