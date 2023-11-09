@@ -102,11 +102,23 @@
   }
 
   .webshop__items {
-    @apply flex flex-col items-center justify-center space-y-4 text-center
+    @apply flex flex-col items-center justify-between space-y-4 text-center
   }
 
   .news__items--play {
     @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] cursor-pointer
+  }
+
+  .webshop__items--namepackage {
+    @apply text-[14px] sm:text-base min-h-[42px] flex-center
+  }
+
+  .not_logged {
+    @apply flex flex-col justify-center items-center text-center mb-8
+  }
+
+  .tabs-no-action {
+    @apply flex space-x-[1px] border-b border-b-[#4a4a4a] mb-8
   }
 
   .video-slick {
@@ -123,7 +135,7 @@
 
   .support-sticky__layout {
     @apply flex flex-col items-start space-y-6 p-2 lg:px-5 lg:py-6 text-white bg-[#ea2336] rounded-r-lg
-  }
+  } 
 
   .video-fit-cover {
     @apply aspect-video object-cover w-full
@@ -139,6 +151,18 @@
 
   .download-option {
     @apply w-full grid grid-cols-1 md:grid-cols-3 gap-y-2 gap-x-4 lg:grid-cols-4 md:gap-8
+  }
+
+  .events-sticky__layout {
+    @apply flex flex-col space-y-6 px-5 py-6 text-white bg-[#161616] rounded-l-lg
+  }
+
+  .related_news {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-4
+  }
+
+  .download-file__info {
+    @apply w-full grid grid-cols-1 md:grid-cols-3 gap-y-2 gap-x-4 lg:grid-cols-4 gap-8
   }
 }
 

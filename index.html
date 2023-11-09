@@ -32,7 +32,7 @@
       </div>
 
       <div class="container-contents">
-        <div data-aos="fade-right" class="mb-[4%]">
+        <div class="mb-[4%]">
           <div class="hidden lg:block">
             <div class="flex justify-between items-end mb-[2%]">
               <ul class="tabs-nav-news flex-center space-x-[1px]">
@@ -280,7 +280,7 @@
           </div>
         </div>
 
-        <div data-aos="zoom-in-down" class="mb-[4%]">
+        <div class="mb-[4%]">
           <div class="hidden lg:block">
             <div class="flex justify-between items-end mb-[2%]">
               <ul class="tabs-nav-video flex-center space-x-[1px]">
@@ -1064,14 +1064,14 @@
         </div>
 
         <div class="flex flex-col lg:flex-row justify-between mb-[8%]">
-          <div data-aos="zoom-in-down" class="w-full lg:w-[60%]">
-            <div class="flex space-x-[1px] border-b border-b-[#4a4a4a] mb-8">
+          <div class="w-full lg:w-[60%]">
+            <div class="tabs-no-action">
               <div class="tab">Webshop</div>
             </div>
 
             <!-- Chưa Đăng nhập -->
             <div
-              class="flex flex-col justify-center items-center text-center mb-8"
+              class="not_logged"
             >
               <p class="mb-4">Vui lòng đăng nhập để sử dụng tính năng này!</p>
               <a href="" class="button-base"> Đăng nhập ngay </a>
@@ -1082,7 +1082,7 @@
               <div
                 class="webshop__items"
               >
-                <p class="text-[14px] sm:text-base">Thẻ đổi tên thường</p>
+                <p class="webshop__items--namepackage">Thẻ đổi tên thường</p>
                 <div class="">
                   <img src="./assets/images/ic_change_ingame_name.png" alt="" />
                 </div>
@@ -1092,7 +1092,7 @@
               <div
                 class="webshop__items"
               >
-                <p class="text-[14px] sm:text-base">Thẻ đổi tên đặc biệt</p>
+                <p class="webshop__items--namepackage">Thẻ đổi tên đặc biệt</p>
                 <div class="">
                   <img
                     src="./assets/images/ic_change_ingame_name_premium.png"
@@ -1105,7 +1105,7 @@
               <div
                 class="webshop__items"
               >
-                <p class="text-[14px] sm:text-base">Thẻ reset chỉ số KDA</p>
+                <p class="webshop__items--namepackage">Thẻ reset chỉ số KDA</p>
                 <div class="">
                   <img src="./assets/images/ic_reset_kda.png" alt="" />
                 </div>
@@ -1114,14 +1114,14 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in-up" class="w-full lg:w-[35%]">
-            <div class="flex space-x-[1px] border-b border-b-[#4a4a4a] mb-8">
+          <div class="w-full lg:w-[35%]">
+            <div class="tabs-no-action">
               <div class="tab">giftcode</div>
             </div>
 
             <!-- Chưa Đăng nhập -->
             <div
-              class="flex flex-col justify-center items-center text-center mb-8"
+              class="not_logged"
             >
               <p class="mb-4">Vui lòng đăng nhập để sử dụng tính năng này!</p>
               <a href="" class="button-base"> Đăng nhập ngay </a>
@@ -1143,12 +1143,12 @@
           </div>
         </div>
 
-        <div data-aos="zoom-out-down" class="w-full">
+        <div class="w-full">
           <img src="./assets/images/banner_footer.png" alt="" />
         </div>
       </div>
 
-      <div class="lg:block fixed top-[20%] left-0 z-50">
+      <div class="hidden lg:block fixed top-[20%] left-0 z-50">
         <div class="flex-center">
           <div
             class="support-sticky__layout"
@@ -1209,7 +1209,7 @@
       <div class="hidden lg:block fixed top-[20%] right-0 z-50">
         <div class="flex flex-row-reverse justify-center items-center">
           <div
-            class="flex flex-col space-y-6 px-5 py-6 text-white bg-[#161616] rounded-l-lg"
+            class="events-sticky__layout"
           >
             <a href="">
               <img src="./assets/images/bg_events_khacan.png" alt="" />
@@ -1276,11 +1276,9 @@
     <script>
       
   $(".tabs-nav-news a").click(function () {
-    // Check for active
     $(".tabs-nav-news li").removeClass("tabs-seclected");
     $(this).parent().addClass("tabs-seclected");
 
-    // Display active tab
     let currentTab = $(this).attr("href");
     $(".tabs-content-news").hide();
     $(currentTab).show();
@@ -1289,11 +1287,9 @@
 
 
   $(".tabs-nav-video a").click(function () {
-    // Check for active
     $(".tabs-nav-video li").removeClass("tabs-seclected");
     $(this).parent().addClass("tabs-seclected");
 
-    // Display active tab
     let currentTab = $(this).attr("href");
     $(".tabs-content-video").hide();
     $(currentTab).show();
